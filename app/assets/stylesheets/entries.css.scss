@@ -1,0 +1,35 @@
+// Place all the styles related to the Entries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+body * {
+	font-family: "Fjalla One"
+}
+
+body {
+	background-color: red;
+	padding: 45px;
+}
+
+
+
+h1 {	
+	color: red;
+}
+
+h2 {
+	color: #0000FF;
+}
+h3 {
+	color: #FF00FF;
+}
+.date {
+	font-size: 10px
+}
+#header {
+	color: green;
+}
+

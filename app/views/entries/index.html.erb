@@ -1,0 +1,22 @@
+
+
+
+
+<h1>Strona o super kotach!!!!</h1>
+
+<% @entries.each do |entry| %>
+  <div>
+  	<h2><%= entry.title %></h2>
+    <%= link_to "Pokaż", entry_path(entry) %>
+
+    <%= link_to "Edytuj", edit_entry_path(entry) %>
+
+
+    <%= link_to "Usuń", entry, method: :delete, data: { confirm: 'Na pewno usunąć?' } %>
+
+  </div>
+<% end %>
+  <%= link_to "Dodaj kotka", new_entry_path %>
+  	<img src="http://www.koty.pl/gfx/koty2/pl/kotykatalogras/28/63/1/1790414512.jpg">
+
+	<img src="https://pbs.twimg.com/profile_images/616542814319415296/McCTpH_E.jpg">

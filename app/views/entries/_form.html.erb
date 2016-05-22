@@ -1,0 +1,11 @@
+
+<%= form_for(entry) do |form| %>
+ <p><%= form.label("title") %></p>
+ <p><%= form.text_field("title") %></p>
+ <p><%= form.label("contents") %></p>
+ <p><%= form.text_area("contents") %></p>
+ <p><%= form.label("date") %></p>
+ <p><%= form.date_field("date") %></p>
+ <p><%= form.select("breed", options_for_select([['dachowy', 'dachowy'], ['perski', 'perski'], ['syjamski', 'syjamski']]), :include_blank => true) %></p>
+ <p><%= form.submit %></p>
+<% end %>
